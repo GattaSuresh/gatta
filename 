@@ -1,0 +1,140 @@
+[1mdiff --git a/December6.txt b/December6.txt[m
+[1mindex 93d1384..a28fb53 100644[m
+[1m--- a/December6.txt[m
+[1m+++ b/December6.txt[m
+[36m@@ -1,133 +1 @@[m
+[31m---patindex :-[m
+[31m-[m
+[31m---It gives the first index position in a given pattern. It returns a int value[m
+[31m-[m
+[31m-[m
+[31m-select PATINDEX('%er%', 'sqlserver') ---5[m
+[31m-[m
+[31m-select patindex ('%[a-z]%','123yyyyyx') --4[m
+[31m-[m
+[31m-select patindex ('%[^a-z]%','ybgyt123yyyyyx') --6[m
+[31m-[m
+[31m-[m
+[31m-select PATINDEX ('%[0-9]%','ybgyt123yyyyyx') ---6[m
+[31m-[m
+[31m-[m
+[31m-select patindex ('%[^0-9]%','123rr') ---4[m
+[31m-[m
+[31m-[m
+[31m-select patindex ('%[^a-z^0-9]%','7548hgd.yro%oe') ---8[m
+[31m-[m
+[31m-select PATINDEX ('%[^a-z^A-Z^0-9]%','7548hgd.yro%oe') --8[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m----------------Loop-----[m
+[31m-It is a continuous operation.[m
+[31m-three are very important in loop[m
+[31m-[m
+[31m-([m
+[31m- L- Logic[m
+[31m- I - Increment[m
+[31m- C - Condition[m
+[31m-)[m
+[31m-[m
+[31m-[m
+[31m-Declare @first int = 10[m
+[31m-[m
+[31m-Declare @last int = 20[m
+[31m-[m
+[31m-10   starting value = 10[m
+[31m-11   for every record 1  is the increment[m
+[31m-12   ending value = 20 ----break [m
+[31m-13[m
+[31m-14[m
+[31m-15[m
+[31m-16[m
+[31m-17[m
+[31m-18[m
+[31m-19[m
+[31m-20[m
+[31m-[m
+[31m---Syntax :-[m
+[31m-[m
+[31m-Declare @first int = 1[m
+[31m-[m
+[31m-Declare @last int = 100[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-While(@first<=@last) ------------------condition [m
+[31m-begin-----------------------------------loop has begin[m
+[31m-print @first ---------------------------LOGIC [m
+[31m-set @first = @first + 1 ----------------------increment[m
+[31m-end[m
+[31m-[m
+[31m-[m
+[31m-------WAQ TO GET THE BANK STATEMENTS-----------[m
+[31m-[m
+[31m-declare @startdate date = '01-01-2024',@enddate date = '02-01-2024'[m
+[31m-[m
+[31m-[m
+[31m-While (@startdate<=@enddate) --------condition [m
+[31m-begin [m
+[31m-print concat ('Transactions done on ' , @startdate) ----------------------------Logic[m
+[31m-set @startdate = dateadd(day,1,@startdate) -------------------increment [m
+[31m-[m
+[31m-end[m
+[31m-[m
+[31m-[m
+[31m-------------------interview question 1---------------------[m
+[31m-[m
+[31m-Declare @randomdate date= '02-05-2024'[m
+[31m-[m
+[31m-output :-[m
+[31m-[m
+[31m-You need to write a query. It should jump to first day of that month[m
+[31m-(1. using string functions and date functions[m
+[31m- 2. only using date functions[m
+[31m- )[m
+[31m-[m
+[31m-output :-[m
+[31m-[m
+[31m-02-01-2024[m
+[31m-[m
+[31m------------------------interview question 2-----------------------[m
+[31m-[m
+[31m-emp_tbl ---table[m
+[31m-[m
+[31m-gender ---field[m
+[31m-[m
+[31m-male[m
+[31m-female[m
+[31m-male[m
+[31m-female[m
+[31m-female[m
+[31m-female[m
+[31m-[m
+[31m-[m
+[31m-output should be opposite gender [m
+[31m-[m
+[31m-[m
+[31m-gender [m
+[31m-[m
+[31m-female[m
+[31m-male[m
+[31m-female[m
+[31m-male[m
+[31m-male[m
+[31m-male[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m---------------Interview question -------------------[m
+[31m-[m
+[31m-Declare @wishes varchar(100) = '     Happy                     new       year'[m
+[31m-set @wishes = 'Happy New Year'[m
+[31m-[m
+[32m+[m[32mThis is for practice[m
+\ No newline at end of file[m
